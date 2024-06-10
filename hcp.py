@@ -4,7 +4,7 @@
 
 from diagrams import Diagram, Cluster, Edge
 from diagrams.aws.compute import EC2
-from diagrams.aws.network import ELB, VPC, PrivateSubnet, PublicSubnet, InternetGateway, NATGateway, Endpoint, Privatelink, TransitGateway, RouteTable
+from diagrams.aws.network import ELB, VPC, PrivateSubnet, PublicSubnet, InternetGateway, NATGateway, Endpoint, Privatelink, TransitGateway, RouteTable, SiteToSiteVpn
 from diagrams.aws.storage import S3
 from diagrams.aws.security import IAMRole
 from diagrams.generic.network import VPN
@@ -15,7 +15,7 @@ from diagrams.aws.general import InternetAlt2
 with Diagram("OpenShift HCP Architecture", show=False, direction="LR"):
 
     privatelink = Privatelink("private-link")
-    vpn_s2s = VPN("VPN / s2s")
+    vpn_s2s = SiteToSiteVpn("VPN / s2s")
     internet = InternetAlt2("Internet")
 
     with Cluster("ROSA HCP Service Account"):
