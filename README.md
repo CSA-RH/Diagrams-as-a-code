@@ -31,7 +31,7 @@ The architecture consists of the following main components:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/openshift-hcp-architecture.git
+    git clone https://github.com/CSA-RH/Diagrams-as-a-code.git
     cd openshift-hcp-architecture
     ```
 
