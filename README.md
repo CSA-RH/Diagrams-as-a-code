@@ -32,7 +32,7 @@ The architecture consists of the following main components:
 
     ```sh
     git clone https://github.com/CSA-RH/Diagrams-as-a-code.git
-    cd openshift-hcp-architecture
+    cd Diagrams-as-a-code
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
