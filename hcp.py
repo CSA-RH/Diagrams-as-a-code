@@ -47,7 +47,7 @@ with Diagram("OpenShift HCP Architecture", show=False, direction="LR"):
             #    route_table_3 = RouteTable("Private Route Table\n0.0.0.0/0 -> TGW\n10.0.0.0/16 local")
             #    private_subnet_3 - worker_node_3
 
-            
+        
 
         #vpc_endpoint = Endpoint("VPC Endpoint")
         private_link = Privatelink("Private Link")
