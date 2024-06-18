@@ -14,7 +14,7 @@ The architecture consists of the following main components:
 
 ## Diagram
 
-![OpenShift HCP Architecture Diagram](https://github.com/CSA-RH/Diagrams-as-a-code/blob/main/openshift_hcp_architecture.png)
+![OpenShift HCP Architecture Diagram](/releases/latest/openshift_hcp_architecture.png)
 
 ## Project Structure
 
