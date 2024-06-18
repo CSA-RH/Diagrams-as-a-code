@@ -49,6 +49,9 @@ jobs:
         for file in ${ALL_CHANGED_FILES}; do
           echo "$file was changed"
         done
+    - name: TEST
+      run: |
+        ls -lisa
     - name: Generate images for all changed python files
       if: steps.changed-python-files.outputs.any_changed == 'true'
       env:
@@ -58,6 +61,11 @@ jobs:
           python $file
         done
     - name: TEST
-
       run: |
         ls -lisa
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          release/k8s-node.ign
+          release/iso-config.ign
