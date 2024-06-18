@@ -10,7 +10,6 @@ from diagrams.aws.security import IAMRole
 from diagrams.generic.network import VPN
 from diagrams.aws.general import InternetAlt2
 
-
 with Diagram("OpenShift HCP Architecture", show=False, direction="LR"):
 
     privatelink = Privatelink("private-link")
