@@ -14,7 +14,7 @@ The architecture consists of the following main components:
 
 ## Diagram
 
-![OpenShift HCP Architecture Diagram](/releases/download/latest/openshift_hcp_architecture.png)
+![OpenShift HCP Architecture Diagram](/releases/download/latest/openshift_hcp_architecture.png?raw=true)
 
 ## Project Structure
 
@@ -54,3 +54,4 @@ To generate the diagram, run the following command:
 
 ```sh
 python hcp.py
+```
