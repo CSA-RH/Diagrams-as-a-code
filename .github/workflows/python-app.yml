@@ -61,6 +61,8 @@ jobs:
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-python-files.outputs.all_changed_files }}
       run: |
+        python --version
+        python3 --version
         for file in ${ALL_CHANGED_FILES}; do
           python $file
         done
