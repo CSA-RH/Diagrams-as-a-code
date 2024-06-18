@@ -1,7 +1,7 @@
 # Ref. main project: https://diagrams.mingrammer.com/
 # Ref. aws icons: https://diagrams.mingrammer.com/docs/nodes/aws
 # ref. examples: https://medium.com/@akhilesh-mishra/doagram-as-code-effortless-cloud-architecture-diagrams-with-python-aece3b1a27f1
-
+ 
 from diagrams import Diagram, Cluster, Edge
 from diagrams.aws.compute import EC2
 from diagrams.aws.network import ELB, VPC, PrivateSubnet, PublicSubnet, InternetGateway, NATGateway, Endpoint, Privatelink, TransitGateway, RouteTable, SiteToSiteVpn
@@ -9,8 +9,6 @@ from diagrams.aws.storage import S3
 from diagrams.aws.security import IAMRole
 from diagrams.generic.network import VPN
 from diagrams.aws.general import InternetAlt2
-
- 
 
 with Diagram("OpenShift HCP Architecture", show=False, direction="LR"):
 
@@ -49,7 +47,7 @@ with Diagram("OpenShift HCP Architecture", show=False, direction="LR"):
             #    route_table_3 = RouteTable("Private Route Table\n0.0.0.0/0 -> TGW\n10.0.0.0/16 local")
             #    private_subnet_3 - worker_node_3
 
-            
+        
 
         #vpc_endpoint = Endpoint("VPC Endpoint")
         private_link = Privatelink("Private Link")
