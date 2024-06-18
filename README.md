@@ -1,5 +1,7 @@
 # OpenShift HCP Architecture
 
+[![Generate images](https://github.com/juanlu-sanz/Diagrams-as-a-code/actions/workflows/python-app.yml/badge.svg)]([https://github.com/juanlu-sanz/fcos-ignition-config/actions/workflows/main.yml](https://github.com/juanlu-sanz/Diagrams-as-a-code/actions/workflows/python-app.yml))
+
 This repository contains a diagram representing the architecture of OpenShift Hybrid Cloud Platform (HCP) using AWS services. The diagram is generated using the `diagrams` Python library.
 
 ## Architecture Overview
