@@ -49,3 +49,15 @@ jobs:
         for file in ${ALL_CHANGED_FILES}; do
           echo "$file was changed"
         done
+    - name: Generate images for all changed python files
+      if: steps.changed-python-files.outputs.any_changed == 'true'
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-python-files.outputs.all_changed_files }}
+      run: |
+        for file in ${ALL_CHANGED_FILES}; do
+          python $file
+        done
+    - name: TEST
+
+      run: |
+        ls -lisa
