@@ -1,7 +1,7 @@
 # Ref. main project: https://diagrams.mingrammer.com/
 # Ref. aws icons: https://diagrams.mingrammer.com/docs/nodes/aws
 # ref. examples: https://medium.com/@akhilesh-mishra/doagram-as-code-effortless-cloud-architecture-diagrams-with-python-aece3b1a27f1
-
+ 
 from diagrams import Diagram, Cluster, Edge
 from diagrams.aws.compute import EC2
 from diagrams.aws.network import ELB, VPC, PrivateSubnet, PublicSubnet, InternetGateway, NATGateway, Endpoint, Privatelink, TransitGateway, RouteTable, SiteToSiteVpn
